@@ -1,7 +1,6 @@
+from finance_complaint.constant.environment.variable_key import AWS_ACCESS_KEY_ID_ENV_KEY,AWS_SECRET_ACCESS_KEY_ENV_KEY
+
 import os
-
-from finance_complaint.constant.environment.variable_key import AWS_ACCESS_KEY_ID_ENV_KEY,AWS_SECRET_ACCESS_KEY_ENV_KEY,MONGO_DB_URL_ENV_KEY
-
 from pyspark.sql import SparkSession
 access_key_id = os.getenv(AWS_ACCESS_KEY_ID_ENV_KEY, )
 secret_access_key = os.getenv(AWS_SECRET_ACCESS_KEY_ENV_KEY, )
@@ -35,3 +34,4 @@ spark_session._jsc.hadoopConfiguration().set("com.amazonaws.services.s3.enableV4
 spark_session._jsc.hadoopConfiguration().set("fs.s3a.aws.credentials.provider","org.apache.hadoop.fs.s3a.BasicAWSCredentialsProvider")
 spark_session._jsc.hadoopConfiguration().set("fs.s3a.endpoint", "ap-south-1.amazonaws.com")
 spark_session._jsc.hadoopConfiguration().set(" fs.s3.buffer.dir","tmp")
+
