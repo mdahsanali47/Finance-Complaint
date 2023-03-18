@@ -52,9 +52,13 @@ docker build -t fc:lts .
 
 ##### Set envment variable
 export AWS_ACCESS_KEY_ID=
+
 export AWS_SECRET_ACCESS_KEY=
+
 export MONGO_DB_URL=
+
 export AWS_DEFAULT_REGION="ap-south-1"
+
 export IMAGE_NAME=fc:lts
 
 ##### To start your application
@@ -85,5 +89,5 @@ airflow scheduler
 ##### To launch airflow server
 airflow webserver -p <port_number>
 
-##### Update in airflow.cfg
+#####o Update in airflow.cfg
 enable_xcom_pickling = True
