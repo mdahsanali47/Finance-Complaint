@@ -54,7 +54,7 @@ jobs:
   
   continuous-deployment:
     machine: true
-    resource_class: md-ahsan-ali/self-hosted
+    resource_class: mdahsanali47/self-hosted-01
     environment:
       REPOSITORY: finance-complaint
       GAR_IMAGE_NAME: finance-complaint
