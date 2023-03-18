@@ -89,5 +89,5 @@ airflow scheduler
 ##### To launch airflow server
 airflow webserver -p <port_number>
 
-#####o Update in airflow.cfg
+##### Update in airflow.cfg
 enable_xcom_pickling = True
