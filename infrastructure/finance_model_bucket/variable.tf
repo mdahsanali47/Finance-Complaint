@@ -1,6 +1,6 @@
 variable "aws_regioin" {
     type    = string
-    default = "ap-south-1"
+    default = "us-east-1"
 }
 
 variable "model_bucket_name" {
