@@ -1,3 +1,10 @@
+provider "google" {
+  credentials = file("/home/ali47/Desktop/project_2/keys for ali47 IAMS/finance-complaint-376721-065b12acb2f9.json")
+  project     = var.finance_project_name
+  region      = "asia-south1"
+  zone        = "asia-south1-c"
+}
+
 data "google_iam_policy" "admin" {
   binding {
     role = var.finance_iam_user_role

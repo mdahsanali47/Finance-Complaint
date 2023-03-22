@@ -77,7 +77,7 @@ variable "finance_compute_instance_compute_type" {
 
 variable "finance_compute_instance_zone" {
   type    = string
-  default = "asia-south1"
+  default = "asia-south1-c"
 }
 
 variable "finance_compute_instance_base_image" {

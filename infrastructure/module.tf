@@ -1,8 +1,12 @@
 terraform {
   backend "s3" {
-    bucket = "finance-tf-state"
+    bucket = "finance-model-bucket"
     key    = "tf_state"
-    region = "us-east-1"
+    region = "ap-south-1"
+    # Specify your AWS profile name
+    # profile = "default"
+    # Optionally, specify a session token value
+    # session_token = "your-value-here"
   }
 }
 

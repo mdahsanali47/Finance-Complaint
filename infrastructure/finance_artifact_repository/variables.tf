@@ -14,12 +14,12 @@ variable "project_name" {
 }
 
 variable "artifact_repository_location" {
-  default = "us-central1"
+  default = "asia-south1"
   type    = string
 }
 
 variable "artifact_repository_repository_id" {
-  default = "finance-complaint-repository"
+  default = "finance-repository"
   type    = string
 }
 
